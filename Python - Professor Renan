@@ -1,0 +1,13 @@
+nota1 = float(input('digite sua primeira nota: '))
+nota2 = float(input('digite sua segunda nota: '))
+
+calc = (nota1 + nota2) / 2
+print('Sua média é: ',calc)
+
+# Recebe o peso e a altura do usuário
+peso = float(input('Digite o seu peso (em kg): '))
+altura = float(input('Digite a sua altura (em metros): '))
+
+# Calcula o IMC
+imc = peso / (altura ** 2)
+print(f'O seu IMC é: {imc:.2f}')
