@@ -1,5 +1,1 @@
-r = float(input("Raio: "))
 
-print("Diâmetro:", 2 * r)
-print("Perímetro:", 2 * math.pi * r)
-print("Área:", math.pi * r * r)
