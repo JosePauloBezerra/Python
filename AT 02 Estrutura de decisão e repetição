@@ -1,0 +1,28 @@
+for i in range(0, 31, 2):  # percorre apenas os números pares de 0 a 30
+    if i == 10 or i == 20 or i == 30:
+        continue  # pula a iteração se o número for 10, 20 ou 30
+    print(i)
+
+    # Entrada da primeira nota com validação
+while True:
+    nota1 = float(input("Digite a primeira nota (0 a 10): "))
+    if 0 <= nota1 <= 10:
+        break
+    print("Nota inválida! Digite um valor entre 0 e 10.")
+
+# Entrada da segunda nota com validação
+while True:
+    nota2 = float(input("Digite a segunda nota (0 a 10): "))
+    if 0 <= nota2 <= 10:
+        break
+    print("Nota inválida! Digite um valor entre 0 e 10.")
+
+# Cálculo da média
+media = (nota1 + nota2) / 2
+
+# Exibição da média e resultado
+print(f"Média: {media:.2f}")
+if media >= 6:
+    print("Aluno aprovado!")
+else:
+    print("Aluno reprovado.")
